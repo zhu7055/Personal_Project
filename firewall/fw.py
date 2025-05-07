@@ -26,7 +26,7 @@ labels = list(protocols.keys())
 sizes = list(protocols.values())
 
 if labels:
-    # 步驟 2: 尋找可用的中文字體 (您可以根據您的系統調整)
+    # 步驟 2: 尋找可用的中文字體 (可根據系統調整)
     plt.rcParams['font.sans-serif'] = ['Microsoft YaHei']  # 常見的 Windows 中文字體
     plt.rcParams['axes.unicode_minus'] = False  # 解決負號顯示為方塊的問題
 

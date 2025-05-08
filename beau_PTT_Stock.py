@@ -1,7 +1,7 @@
 //利用BeautifulSoup爬取PTT
 import requests
 from bs4 import BeautifulSoup
-response=requests.get("https://www.ptt.cc/bbs/Stock/index.html")#取得C_Chat的HTML原始碼
+response=requests.get("https://www.ptt.cc/bbs/Stock/index.html")#取得C_Stock的HTML原始碼
 root=BeautifulSoup(response.text,"html.parser")
 #解析原始碼
 

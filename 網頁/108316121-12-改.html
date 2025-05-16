@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <title>作業12</title>
+    
+    <style>
+        #wrapper{
+		   
+		   postion:absolute;
+		   border:2px solid black;
+		   width: 750px;
+		   height: 600px;
+		   margin: 30px auto;
+		}
+        .a1 li{
+		   position: absolute;
+		   top:30px;
+		   
+		   list-style: none;
+		   }
+        .a1 li img{
+		
+		   width: 600px;
+		   height: 500px;
+			  }
+			  
+        #image1{
+		    
+            opacity: 1;
+            z-index: 3;
+            animation: turn 6s linear infinite;
+            -webkit-animation: turn 6s linear infinite;
+            -o-animation: turn 6s linear infinite;
+            -moz-animation: turn 6s linear infinite;
+            }
+        #image2{
+            opacity: 0;
+            z-index: 2;
+            animation: turn 6s linear 2s infinite;
+            -webkit-animation: turn 6s linear 2s infinite;
+            -o-animation: turn 6s linear 2s infinite;
+            -moz-animation: turn 6s linear 2s infinite;
+        }
+        #image3{
+            opacity: 0;
+            z-index: 1;
+            animation: turn 6s linear 4s infinite;
+            -webkit-animation: turn 6s linear 4s infinite;
+            -o-animation: turn 6s linear 4s infinite;
+            -moz-animation: turn 6s linear 4s infinite;
+        }
+        
+        /*淡入淡出動畫*/
+        @keyframes turn{
+		    0%{opacity:0;}
+            10%{opacity:1;}
+            20%{opacity: 0.2;}
+            25%{opacity: 0;}
+            100%{opacity: 0;}
+        }
+        @-o-keyframes turn{
+            10%{opacity: 1;}
+            20%{opacity: 0.2;}
+            25%{opacity: 0;}
+            100%{opacity: 0;}
+        }
+        @-moz-keyframes turn{
+            10%{opacity: 1;}
+            20%{opacity: 0.2;}
+            25%{opacity: 0;}
+            100%{opacity: 0;}
+        }
+        @-webkit-keyframes turn{
+            10%{opacity: 1;}
+            20%{opacity: 0.2;}
+            25%{opacity: 0;}
+            100%{opacity: 0;}
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="bn">
+            <ul class="a1">
+                <li><img src="http://ican.tcu.edu.tw/ican5/Download.ashx?fileid=140693" id="image1"/></li>
+                <li><img src="http://ican.tcu.edu.tw/ican5/Download.ashx?fileid=140694" id="image2"/></li>
+                <li><img src="http://ican.tcu.edu.tw/ican5/Download.ashx?fileid=140695" id="image3"/></li>
+                
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

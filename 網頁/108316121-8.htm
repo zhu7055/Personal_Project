@@ -1,0 +1,181 @@
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft Visual Studio">
+<TITLE>HW8</TITLE>
+    <style type="text/css">
+        nav{
+            display:block;
+            /*color:white;*/
+            padding:0;
+            margin:0 auto 0 auto;
+            border:0px solid grey;
+            text-align :center;
+        }
+        /*第一層ul*/
+        nav ul{
+            /*display:block;*/
+            width:200px;
+            height:30px;
+            padding:0;
+            margin:0;
+            list-style-type:none;
+            color:white;
+            text-decoration:none;
+        }
+        nav> ul> li{
+            position:relative;
+            display:block;
+            background: linear-gradient(darkblue, silver);
+            width:200px;
+            height:30px;
+            border:1px solid grey;
+            color:white;
+        }
+        
+        /*第一層a*/
+        nav> ul> li> a:hover{
+
+            text-decoration: none;
+            /*padding-top:5px;*/
+            color:black;
+            
+           
+            text-align: center;
+            background:white;
+        }
+        /*去掉第一層文字底線*/
+        nav> ul> li> a{
+            color:white;
+            text-decoration: none;
+        }
+        /*第二層ul背景*/
+        nav ul li ul{
+            
+            background:#b8860b;
+            border-bottom:1px solid aliceblue;
+            width:200px;
+            height:30px;
+        }
+        /* 第二層a字型*/
+        nav> ul >li >ul >li> a {
+            display: block;
+	        font-size:20px;
+	        color:grey;
+	        text-decoration:none;
+            
+       }
+         nav> ul >li >ul >li> a:hover
+        
+        {
+	        color:white;
+            text-align: center;
+        }
+        
+        /*第二層*/
+        nav ul li ul{
+            
+            /*讓第二層ul跳脫文件，定位*/
+            position:absolute;
+            left:200px;
+            top:-20px;
+            width:200px;
+            height:30px;
+            /*避免捲軸出現*/
+            overflow: visible;
+            /*讓ul與母階層li相同位置*/
+            clear:right;
+        }
+        
+        /*隱藏 顯示*/
+        /*先隱藏第二層 */
+        nav ul li ul{
+            display: block;
+            visibility:hidden;
+        }
+        /*觸碰到第一層出現第二層*/
+        nav ul li:hover ul{
+            /*min-width: 500;
+            : 500;*/
+            position: relative;
+            /*min-width: 50px;*/
+            display:block;
+            width:200px;
+            height: auto;
+            visibility:visible;
+            
+        }
+        nav
+        /*第一層ul背景*/
+        nav ul li{
+            background: linear-gradient(darkblue, silver);
+            display:block;
+            float:left;
+            
+            color:white;
+            text-decoration:none;
+            /*text-align: center;*/
+            
+        }
+       /*第一層 hover*/
+       nav>ul>li:hover{
+            display:block;
+            /*border-left:1px solid grey;
+            border-top:1px solid grey;
+            border-right:1px solid grey;*/
+            text-decoration: none;
+            text-align: center;
+            background:white;
+            color:black;
+        }
+        </style>
+</HEAD>
+<BODY>
+    <nav>
+        <ul>
+            <li><a href="#">上課教材</a>
+                    <ul>
+                        <li><a href="#">HW1</a></li>
+                        <hr>
+                        <li><a href="#">HW2</a></li>
+                        <hr>
+                        <li><a href="#">HW3</a></li>
+                        <hr>
+                        <li><a href="#">HW4</a></li>
+                        <hr>
+                        <li><a href="#">HW5</a></li>
+                        <hr>
+                        <li><a href="#">HW6</a></li>
+                        <hr>
+                        <li><a href="#">HW7</a></li>
+                        <hr>
+                        <li><a href="#">HW8</a></li>
+                    </ul>
+            </li>
+            
+            <li><a href="#">繳交作業</a>
+                <ul>
+                    <li><a href="#">HW1</a></li>
+                    <hr>
+                    <li><a href="#">HW2</a></li>
+                    <hr>
+                    <li><a href="#">HW3</a></li>
+                    <hr>
+                    <li><a href="#">HW4</a></li>
+                    <hr>
+                    <li><a href="#">HW5</a></li>
+                    <hr>
+                    <li><a href="#">HW6</a></li>
+                    <hr>
+                    <li><a href="#">HW7</a></li>
+                    <hr>
+                    <li><a href="#">HW8</a></li>
+                </ul>
+            </li>
+                
+            <li><a href="#">聯絡方式</a></li>
+        </ul>
+        </nav>
+
+
+</BODY>
+</HTML>

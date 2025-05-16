@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body bgcolor="#E0E0FF">
+
+<font>輸入的帳號：</font> <font id="name1"></font><br><br>
+
+<font>輸入的密碼：</font> <font id="name2"></font><br><br>
+
+<font>輸入的姓名：</font> <font id="name3"></font><br><br>
+
+
+ 
+  
+<font>輸入的性別：</font> <font id="name4"></font><br><br>
+
+
+
+<font>輸入的學歷：</font> <font id="name5"></font><br><br>
+
+ 
+
+<font>輸入的興趣：</font> <font id="name6"></font><br><br>
+<script> 
+let urlParams = new URLSearchParams(window.location.search);
+ document.getElementById("name1").innerHTML = urlParams.get('num'); 
+document.getElementById("name2").innerHTML = urlParams.get('word'); 
+document.getElementById("name3").innerHTML = urlParams.get('name'); 
+   document.getElementById("name4").innerHTML = urlParams.get('gender'); 
+   document.getElementById("name5").innerHTML = urlParams.get('school'); 
+   document.getElementById("name6").innerHTML = urlParams.getAll('interest');
+</script>
+</body>
+</html>

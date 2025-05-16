@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>作業13</title>
+    </head>
+    <body>
+        <form action="#" id="form">
+            
+        <h1>文具用品計算</h1>
+        <p>筆記本*1 =30元</p>
+        <p>原子筆*1 =20元</p>
+        <p>我要<input type="text" id="output1">本筆記本 + <input type="text" id="output2">支原子筆</p>
+            <button type="button" value="計算" id="summation">計算</button>
+        
+        <p id="n">總共是 元</p>
+        </form>
+        
+        <script>
+           /*onclick="sum(total)"*/
+            document.getElementById('summation').onclick = function()
+            {
+                var note = document.getElementById('output1').value;
+                var price1;/*筆記本*/
+                var pen = document.getElementById('output2').value;
+                var price2;/*原子筆*/
+                var sum;/*總和*/
+                var Str;
+                if(note<0 || pen<0)/*判斷是否為正數*/
+                {
+                      Str='請重新輸入';
+                }
+                else if(note%1 != 0 || pen%1 !=0)/*判斷是否為小數和英文*/
+                {
+                     Str='請重新輸入';
+                }
+                else
+                {
+                    price1 = note*30;
+                    price2 = pen*20;
+                    sum = price1 + price2;
+                    Str='總共是' + sum + '元';
+                    
+                }
+                document.getElementById('n').textContent =Str;
+               
+               } 
+                
+                
+                
+            
+        </script>
+    </body>
+</html>

@@ -11,6 +11,6 @@ fw.py:分析log檔程式
 beau_PTT_Stock.py
 
 
-# brach
-patch1
+# branch
+patch1:
 Leetcode

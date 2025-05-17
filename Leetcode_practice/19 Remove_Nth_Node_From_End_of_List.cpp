@@ -1,3 +1,10 @@
+//1.fast先移動n步(n+1)
+//2.slow和fast同時move
+//3.直到fast指向NULL
+//4.slow指向要刪除的node(前一個)
+//5.要先把slow指向要刪除的前一個node
+//6.最後slow指向的node為NULL
+//7.return頭節點
 class Solution {
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {
@@ -9,7 +16,7 @@ public:
             fast=fast->next;
         }
         
-        fast=fast->next;//快指針在提前走一步，要讓慢指針指向刪除節點的前一個節點
+        fast=fast->next;//快指針再提前走一步，要讓慢指針指向刪除節點的前一個節點
         while(fast!=NULL){ //fast和slow指針，同時向右移動
             fast=fast->next; //fast指向NULL時，slow指向要刪除節點的前一個node
             slow=slow->next;

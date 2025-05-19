@@ -10,4 +10,4 @@ class Solution:
             if record[i]!=0:
                 #record若有些element!=0，說明string s和t，一定有多字符or少字符。
                 return False#不是有效的
-        return True
+        return True#是有效的

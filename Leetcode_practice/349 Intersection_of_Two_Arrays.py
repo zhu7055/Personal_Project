@@ -1,5 +1,5 @@
 # Two array的Intersection
-#Use Dictionary and Set
+#Use List and Set
 
 class Solution(object):
     def intersection(nums1,nums2):

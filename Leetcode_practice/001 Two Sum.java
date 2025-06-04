@@ -1,5 +1,6 @@
 import java.util.Map;
 
+class Solution {
 public int[] twoSum(int[] nums,int target){
     Map<Integer,Integer> indexMap=new HashMap<>();
     
@@ -9,8 +10,9 @@ public int[] twoSum(int[] nums,int target){
             return new int[]{i,indexMap.get(s)};//如果有找到，return目標值
         }
         else{
-            indexMap.put(nums[i],i);//如果沒有，把遍歷過的元素和下標加入map中
+            indexMap.put(nums[i],i);//如果沒有，把遍歷過的元素和下標(index)加入map中
         }
     }
     return null;
+}
 }

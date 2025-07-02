@@ -17,6 +17,4 @@ beau_PTT_Stock.py
 # branch
 patch1:
 Leetcode
-=======
-## patch1:Leetcode
->>>>>>> zhu7055-patch-1
+

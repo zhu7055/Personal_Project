@@ -11,8 +11,12 @@ fw.py:分析log檔程式
 
 ## BeautifulSoup爬取ptt_Stock標題
 beau_PTT_Stock.py
+<<<<<<< HEAD
 
 
 # branch
 patch1:
 Leetcode
+=======
+## patch1:Leetcode
+>>>>>>> zhu7055-patch-1

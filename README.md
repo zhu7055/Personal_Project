@@ -9,7 +9,7 @@ firewall_protocols.png:圖表
 fw.py:分析log檔程式  
 
 <h3 align=left>BeautifulSoup爬取ptt_Stock標題</h3>
-beau_PTT_Stock.py
+BeautifulSoup_PPT_Stock.py
 <<<<<<< HEAD
 
 

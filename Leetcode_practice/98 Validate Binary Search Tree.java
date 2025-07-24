@@ -18,7 +18,7 @@ import javax.swing.tree.TreeNode;
  
 class Solution {
 
-    // 檢查二叉樹是否為有效的二叉搜索樹
+    // 檢查二元樹是否為有效的二元搜索樹
     boolean isValid(TreeNode root, long min, long max) {
 
         // 如果節點為空，則返回 true
@@ -31,7 +31,7 @@ class Solution {
         return isValid(root.left, min, root.val) && isValid(root.right, root.val, max);
     }
 
-    // 主函數，檢查整棵樹是否為有效的二叉搜索樹
+    // 主函數，檢查整棵樹是否為有效的二元搜索樹
     public boolean isValidBST(TreeNode root) {
         return isValid(root, Long.MIN_VALUE, Long.MAX_VALUE);
     }
